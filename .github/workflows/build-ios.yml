@@ -16,14 +16,15 @@ jobs:
       - name: Show Xcode Version
         run: xcodebuild -version
 
-      - name: Build Archive
+      - name: Build iOS App
         run: |
           cd ios
-          xcodebuild archive \
+          xcodebuild build \
             -project MeuCheckin.xcodeproj \
             -scheme MeuCheckin \
             -configuration Release \
-            -archivePath build/MeuCheckin.xcarchive \
+            -sdk iphoneos \
+            -derivedDataPath build/DerivedData \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
@@ -33,7 +34,7 @@ jobs:
         run: |
           cd ios
           mkdir -p build/Payload
-          cp -r build/MeuCheckin.xcarchive/Products/Applications/MeuCheckin.app build/Payload/
+          cp -r build/DerivedData/Build/Products/Release-iphoneos/MeuCheckin.app build/Payload/
           cd build
           zip -r meu-checkin.ipa Payload
           mkdir -p ../../dist
