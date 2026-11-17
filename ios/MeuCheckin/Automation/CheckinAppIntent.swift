@@ -28,7 +28,7 @@ public struct MeuCheckinShortcuts: AppShortcutsProvider {
             phrases: [
                 "Fazer check-in no \(.applicationName)",
                 "Confirmar treino no \(.applicationName)",
-                "Check-in Jiu-Jitsu"
+                "Check-in Jiu-Jitsu no \(.applicationName)"
             ],
             shortTitle: "Check-in Jiu-Jitsu",
             systemImageName: "figure.martial.arts"
