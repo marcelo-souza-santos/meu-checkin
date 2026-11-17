@@ -29,6 +29,7 @@
 		B120 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120 /* LoadingView.swift */; };
 		B121 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121 /* LoginView.swift */; };
 		B122 /* ClockAlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122 /* ClockAlarmsView.swift */; };
+		B124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F124 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F121 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F122 /* ClockAlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAlarmsView.swift; sourceTree = "<group>"; };
 		F123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				F101 /* MeuCheckinApp.swift */,
 				F123 /* Info.plist */,
+				F124 /* Assets.xcassets */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B124 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +407,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.meucheckin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1";
 			};
@@ -424,7 +427,6 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.meucheckin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1";
 			};
@@ -455,4 +457,3 @@
 	};
 	rootObject = 1A000001 /* Project object */;
 }
-

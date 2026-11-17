@@ -19,6 +19,7 @@ jobs:
       - name: Build iOS App
         run: |
           cd ios
+          set -o pipefail
           xcodebuild build \
             -project MeuCheckin.xcodeproj \
             -scheme MeuCheckin \
@@ -28,9 +29,10 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            AD_HOC_CODE_SIGNING_ALLOWED=YES
+            AD_HOC_CODE_SIGNING_ALLOWED=YES 2>&1 | tee ../xcodebuild.log
 
       - name: Package Payload to IPA
+        if: success()
         run: |
           cd ios
           mkdir -p build/Payload
@@ -41,8 +43,17 @@ jobs:
           cp meu-checkin.ipa ../../dist/
 
       - name: Upload IPA Artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: meu-checkin-ios-ipa
           path: dist/meu-checkin.ipa
           retention-days: 14
+
+      - name: Upload Build Log on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-failure-log
+          path: xcodebuild.log
+          retention-days: 3
