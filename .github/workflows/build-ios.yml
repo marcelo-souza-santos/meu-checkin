@@ -1,0 +1,51 @@
+name: Build iOS (IPA)
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'ios/**'
+      - '.github/workflows/build-ios.yml'
+  workflow_dispatch:
+
+jobs:
+  build-ipa:
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer
+
+      - name: Build Archive
+        run: |
+          cd ios
+          xcodebuild archive \
+            -project MeuCheckin.xcodeproj \
+            -scheme MeuCheckin \
+            -configuration Release \
+            -archivePath build/MeuCheckin.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
+
+      - name: Package Payload to IPA
+        run: |
+          cd ios
+          mkdir -p build/Payload
+          cp -r build/MeuCheckin.xcarchive/Products/Applications/MeuCheckin.app build/Payload/
+          cd build
+          zip -r meu-checkin.ipa Payload
+          mkdir -p ../../dist
+          cp meu-checkin.ipa ../../dist/
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: meu-checkin-ios-ipa
+          path: dist/meu-checkin.ipa
+          retention-days: 14
+

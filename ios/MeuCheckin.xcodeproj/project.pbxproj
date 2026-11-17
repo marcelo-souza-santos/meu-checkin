@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B101 /* MeuCheckinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F101 /* MeuCheckinApp.swift */; };
+		B102 /* TrainingAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F102 /* TrainingAlarm.swift */; };
+		B103 /* AlunoPerfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F103 /* AlunoPerfil.swift */; };
+		B104 /* TreinoOpcao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104 /* TreinoOpcao.swift */; };
+		B105 /* CheckinLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105 /* CheckinLog.swift */; };
+		B106 /* AlarmFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F106 /* AlarmFormatters.swift */; };
+		B107 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107 /* KeychainStore.swift */; };
+		B108 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F108 /* ApiClient.swift */; };
+		B109 /* TrainingAlarmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109 /* TrainingAlarmStore.swift */; };
+		B110 /* CheckinLogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110 /* CheckinLogStore.swift */; };
+		B111 /* CheckinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F111 /* CheckinRepository.swift */; };
+		B112 /* CheckinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F112 /* CheckinManager.swift */; };
+		B113 /* CheckinAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113 /* CheckinAppIntent.swift */; };
+		B114 /* NotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F114 /* NotificationHelper.swift */; };
+		B115 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115 /* Color+Theme.swift */; };
+		B116 /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116 /* UiState.swift */; };
+		B117 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F117 /* MainViewModel.swift */; };
+		B118 /* SelectTreinoDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F118 /* SelectTreinoDialog.swift */; };
+		B119 /* NativeClockCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F119 /* NativeClockCard.swift */; };
+		B120 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F120 /* LoadingView.swift */; };
+		B121 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F121 /* LoginView.swift */; };
+		B122 /* ClockAlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122 /* ClockAlarmsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A101 /* MeuCheckin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeuCheckin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F101 /* MeuCheckinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuCheckinApp.swift; sourceTree = "<group>"; };
+		F102 /* TrainingAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAlarm.swift; sourceTree = "<group>"; };
+		F103 /* AlunoPerfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoPerfil.swift; sourceTree = "<group>"; };
+		F104 /* TreinoOpcao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreinoOpcao.swift; sourceTree = "<group>"; };
+		F105 /* CheckinLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinLog.swift; sourceTree = "<group>"; };
+		F106 /* AlarmFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmFormatters.swift; sourceTree = "<group>"; };
+		F107 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		F108 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F109 /* TrainingAlarmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingAlarmStore.swift; sourceTree = "<group>"; };
+		F110 /* CheckinLogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinLogStore.swift; sourceTree = "<group>"; };
+		F111 /* CheckinRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinRepository.swift; sourceTree = "<group>"; };
+		F112 /* CheckinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinManager.swift; sourceTree = "<group>"; };
+		F113 /* CheckinAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinAppIntent.swift; sourceTree = "<group>"; };
+		F114 /* NotificationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
+		F115 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
+		F116 /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
+		F117 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		F118 /* SelectTreinoDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTreinoDialog.swift; sourceTree = "<group>"; };
+		F119 /* NativeClockCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeClockCard.swift; sourceTree = "<group>"; };
+		F120 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F121 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F122 /* ClockAlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockAlarmsView.swift; sourceTree = "<group>"; };
+		F123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A000002 = {
+			isa = PBXGroup;
+			children = (
+				G001 /* MeuCheckin */,
+				G002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G001 /* MeuCheckin */ = {
+			isa = PBXGroup;
+			children = (
+				G010 /* App */,
+				G020 /* Domain */,
+				G030 /* Data */,
+				G040 /* Automation */,
+				G050 /* UI */,
+			);
+			path = MeuCheckin;
+			sourceTree = "<group>";
+		};
+		G010 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F101 /* MeuCheckinApp.swift */,
+				F123 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		G020 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				G021 /* Models */,
+				G022 /* Utils */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		G021 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F102 /* TrainingAlarm.swift */,
+				F103 /* AlunoPerfil.swift */,
+				F104 /* TreinoOpcao.swift */,
+				F105 /* CheckinLog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		G022 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F106 /* AlarmFormatters.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		G030 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				G031 /* API */,
+				G032 /* Local */,
+				G033 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		G031 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F107 /* KeychainStore.swift */,
+				F108 /* ApiClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		G032 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				F109 /* TrainingAlarmStore.swift */,
+				F110 /* CheckinLogStore.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		G033 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F111 /* CheckinRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		G040 /* Automation */ = {
+			isa = PBXGroup;
+			children = (
+				F112 /* CheckinManager.swift */,
+				F113 /* CheckinAppIntent.swift */,
+				F114 /* NotificationHelper.swift */,
+			);
+			path = Automation;
+			sourceTree = "<group>";
+		};
+		G050 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				G051 /* Theme */,
+				G052 /* State */,
+				G053 /* ViewModel */,
+				G054 /* Components */,
+				G055 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		G051 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F115 /* Color+Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		G052 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				F116 /* UiState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		G053 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F117 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		G054 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F118 /* SelectTreinoDialog.swift */,
+				F119 /* NativeClockCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		G055 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F120 /* LoadingView.swift */,
+				F121 /* LoginView.swift */,
+				F122 /* ClockAlarmsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		G002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A101 /* MeuCheckin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A000003 /* MeuCheckin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A000008 /* Build configuration list for PBXNativeTarget "MeuCheckin" */;
+			buildPhases = (
+				1A000004 /* Sources */,
+				1A000006 /* Frameworks */,
+				1A000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeuCheckin;
+			productName = MeuCheckin;
+			productReference = A101 /* MeuCheckin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					1A000003 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1A000007 /* Build configuration list for PBXProject "MeuCheckin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "pt-BR";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"pt-BR",
+				Base,
+			);
+			mainGroup = 1A000002;
+			productRefGroup = G002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A000003 /* MeuCheckin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B101 /* MeuCheckinApp.swift in Sources */,
+				B102 /* TrainingAlarm.swift in Sources */,
+				B103 /* AlunoPerfil.swift in Sources */,
+				B104 /* TreinoOpcao.swift in Sources */,
+				B105 /* CheckinLog.swift in Sources */,
+				B106 /* AlarmFormatters.swift in Sources */,
+				B107 /* KeychainStore.swift in Sources */,
+				B108 /* ApiClient.swift in Sources */,
+				B109 /* TrainingAlarmStore.swift in Sources */,
+				B110 /* CheckinLogStore.swift in Sources */,
+				B111 /* CheckinRepository.swift in Sources */,
+				B112 /* CheckinManager.swift in Sources */,
+				B113 /* CheckinAppIntent.swift in Sources */,
+				B114 /* NotificationHelper.swift in Sources */,
+				B115 /* Color+Theme.swift in Sources */,
+				B116 /* UiState.swift in Sources */,
+				B117 /* MainViewModel.swift in Sources */,
+				B118 /* SelectTreinoDialog.swift in Sources */,
+				B119 /* NativeClockCard.swift in Sources */,
+				B120 /* LoadingView.swift in Sources */,
+				B121 /* LoginView.swift in Sources */,
+				B122 /* ClockAlarmsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A00000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A00000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MeuCheckin/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meucheckin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		1A00000C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MeuCheckin/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.meucheckin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A000007 /* Build configuration list for PBXProject "MeuCheckin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A000009 /* Debug */,
+				1A00000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A000008 /* Build configuration list for PBXNativeTarget "MeuCheckin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A00000B /* Debug */,
+				1A00000C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A000001 /* Project object */;
+}
+
