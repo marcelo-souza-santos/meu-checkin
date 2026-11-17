@@ -32,19 +32,14 @@ public final class MainViewModel: ObservableObject {
 
     public func verificarSessao() async {
         state = .loading
-        do {
-            async let perfilTask = repository.getAlunoPerfil()
-            async let treinosTask = repository.getTreinosDisponiveis()
+        async let perfilTask = repository.getAlunoPerfil()
+        async let treinosTask = repository.getTreinosDisponiveis()
 
-            let (perfil, treinos) = await (perfilTask, treinosTask)
-            self.perfilAluno = perfil
-            self.availableTreinos = treinos
-            self.alarms = repository.getAlarms()
-            self.state = .alarms
-        } catch {
-            self.error = error.localizedDescription
-            self.state = repository.hasSavedCredentials ? .alarms : .login
-        }
+        let (perfil, treinos) = await (perfilTask, treinosTask)
+        self.perfilAluno = perfil
+        self.availableTreinos = treinos
+        self.alarms = repository.getAlarms()
+        self.state = .alarms
     }
 
     public func login(email: String, pass: String) async {

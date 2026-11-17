@@ -21,6 +21,7 @@ public struct RealizarCheckinIntent: AppIntent {
 /// Fornece o atalho pré-configurado no sistema
 @available(iOS 16.0, *)
 public struct MeuCheckinShortcuts: AppShortcutsProvider {
+    @AppShortcutsBuilder
     public static var appShortcuts: [AppShortcut] {
         AppShortcut(
             intent: RealizarCheckinIntent(),
