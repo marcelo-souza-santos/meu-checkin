@@ -29,8 +29,12 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_STYLE=Manual \
             AD_HOC_CODE_SIGNING_ALLOWED=YES > ../xcodebuild.log 2>&1; then
             echo "::error::Xcode build failed!"
+            grep -E "(error:|fatal error:)" ../xcodebuild.log | head -n 30 | while IFS= read -r line; do
+              echo "::error title=XcodeError::$line"
+            done
             cat ../xcodebuild.log
             echo "## ❌ Xcode Build Failed" >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
